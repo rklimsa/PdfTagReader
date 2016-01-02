@@ -79,7 +79,7 @@ int main(int argc, char* argv[])
 		FileHandler* f = new FileHandler(filepath.c_str());
 		if(param == true)
 		{
-			pos = f->read(0,"obj","endobj",direction,params);		
+			pos = f->read(0,startTag.c_str(),endTag.c_str(),direction,params);
 		}
 		else
 		{
